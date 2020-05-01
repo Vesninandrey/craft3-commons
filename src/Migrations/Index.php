@@ -32,7 +32,7 @@ class Index
      */
     public function getName(): string
     {
-        return ($this->prefix ?? '') . implode('_', $this->columns) . ($this->unique ? '_unq' : '') . '_idx';
+        return ($this->prefix ?? '') . implode('_', $this->columns) . ($this->unique ? '_u' : '');
     }
 
     /**
